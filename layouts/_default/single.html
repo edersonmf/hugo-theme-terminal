@@ -9,8 +9,13 @@
       </span>
     {{ end }}
     {{ with .Params.Author }}
-    <span class="post-author">:: {{ . }}</span>
+    <span class="post-author">:: by {{ . }}</span>
     {{ end }}
+  </div>
+  <div class="post-meta">
+    <span class="post-read-time">
+      {{ .ReadingTime }}min read
+    </span>
   </div>
 
   {{ if .Params.tags }}
